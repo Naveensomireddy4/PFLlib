@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/student/R/fl/PFLlib/system/main.py", line 58, in <module>
+    from flcore.servers.serverpac import FedPAC
+  File "/home/student/R/fl/PFLlib/system/flcore/servers/serverpac.py", line 22, in <module>
+    import cvxpy as cvx
+ModuleNotFoundError: No module named 'cvxpy'

@@ -1,0 +1,31 @@
+SimpleCnn(
+  (conv1): Conv2d(28, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=1568, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=10, bias=True)
+)
+usage: main.py [-h] [-go GOAL] [-dev {cpu,cuda}] [-did DEVICE_ID]
+               [-data DATASET] [-nb NUM_CLASSES] [-m MODEL]
+               [-lbs BATCH_SIZE] [-lr LOCAL_LEARNING_RATE]
+               [-ld LEARNING_RATE_DECAY] [-ldg LEARNING_RATE_DECAY_GAMMA]
+               [-gr GLOBAL_ROUNDS] [-ls LOCAL_EPOCHS]
+               [--algorithm ALGORITHM] [-jr JOIN_RATIO]
+               [-rjr RANDOM_JOIN_RATIO] [-nc NUM_CLIENTS] [-pv PREV]
+               [-t TIMES] [-eg EVAL_GAP] [-dp PRIVACY] [-dps DP_SIGMA]
+               [-sfn SAVE_FOLDER_NAME] [-ab AUTO_BREAK] [-dlg DLG_EVAL]
+               [-dlgg DLG_GAP] [-bnpc BATCH_NUM_PER_CLIENT]
+               [-nnc NUM_NEW_CLIENTS] [-ften FINE_TUNING_EPOCH_NEW]
+               [-cdr CLIENT_DROP_RATE] [-tsr TRAIN_SLOW_RATE]
+               [-ssr SEND_SLOW_RATE] [-ts TIME_SELECT]
+               [-tth TIME_THRETHOLD] [-bt BETA] [-lam LAMDA] [-mu MU]
+               [-K K] [-lrp P_LEARNING_RATE] [-M M] [-itk ITK]
+               [-alk ALPHAK] [-sg SIGMA] [-al ALPHA] [-pls PLOCAL_EPOCHS]
+               [-tau TAU] [-fte FINE_TUNING_EPOCHS]
+               [-dlr DR_LEARNING_RATE] [-L L] [-nd NOISE_DIM]
+               [-glr GENERATOR_LEARNING_RATE] [-hd HIDDEN_DIM]
+               [-se SERVER_EPOCHS] [-lf LOCALIZE_FEATURE_EXTRACTOR]
+               [-slr SERVER_LEARNING_RATE] [-et ETA] [-s RAND_PERCENT]
+               [-p LAYER_IDX] [-mlr MENTEE_LEARNING_RATE] [-Ts T_START]
+               [-Te T_END] [-mo MOMENTUM] [-klw KL_WEIGHT]
+main.py: error: unrecognized arguments: --gr 20 --did 0

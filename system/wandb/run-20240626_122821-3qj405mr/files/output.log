@@ -1,0 +1,204 @@
+SimpleCnn(
+  (conv1): Conv2d(28, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=1568, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=10, bias=True)
+)
+cuda is not avaiable.
+==================================================
+Algorithm: FedAvg
+Local batch size: 10
+Local epochs: 1
+Local learing rate: 0.005
+Local learing rate decay: False
+Total number of clients: 20
+Clients join in each round: 1.0
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: BloodMNIST
+Number of classes: 10
+Backbone: resnet18
+Using device: cpu
+Using DP: False
+Auto break: False
+Global rounds: 20
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+============= Running time: 0th =============
+Creating server and clients ...
+x(
+  (conv1): Conv2d(28, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): a(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): a(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): a(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): a(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): a(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+  (fc): Linear(in_features=10, out_features=10, bias=True)
+)
+drop classif com
+-------------Round number: 0-------------
+Evaluate global model
+Averaged Train Loss: 2.2691
+Averaged Test Accurancy: 0.0703
+Averaged Test AUC: 0.5693
+Std Test Accurancy: 0.0527
+Std Test AUC: 0.0483
+clients: 10
+Training client: 1, Time Cost: 3.120598554611206, Train Accuracy: 50.00%
+Training client: 3, Time Cost: 3.36979079246521, Train Accuracy: 43.87%
+Training client: 7, Time Cost: 3.3368217945098877, Train Accuracy: 36.43%
+Training client: 8, Time Cost: 3.3417296409606934, Train Accuracy: 23.33%
+Training client: 12, Time Cost: 3.4246022701263428, Train Accuracy: 29.35%
+Training client: 13, Time Cost: 3.977828025817871, Train Accuracy: 48.61%
+Training client: 15, Time Cost: 4.267648220062256, Train Accuracy: 50.26%
+Training client: 17, Time Cost: 3.7305939197540283, Train Accuracy: 30.88%
+Training client: 18, Time Cost: 2.665623664855957, Train Accuracy: 38.75%
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/student/R/fl/PFLlib/system/flcore/servers/serveravg.py", line 451, in train_batch
+    self._target(*self._args, **self._kwargs)
+  File "/home/student/R/fl/PFLlib/system/flcore/servers/serveravg.py", line 451, in train_batch
+    drop_len = dr*len(batch_clients)
+TypeError: object of type 'NoneType' has no len()
+    drop_len = dr*len(batch_clients)
+TypeError: object of type 'NoneType' has no len()
+Training client: 19, Time Cost: 64.3926751613617, Train Accuracy: 72.05%
+length of uploaded models 20
+Batch 1 clients: [10, 3, 9, 7, 8, 5, 2, 14, 11, 1, 0, 6, 4, 16]
+Batch 2 clients: [12, 13, 15, 17, 18, 19]
+hello
+Training round 1/148 for batch 10
+Training round 1/10 for batch 12
+Evaluate global model
+Averaged Train Loss: 2.1781
+Averaged Test Accurancy: 0.2854
+Averaged Test AUC: 0.7477
+Std Test Accurancy: 0.1201
+Std Test AUC: 0.0533
+length of uploaded models 10
+Round time cost: 39.31346583366394
+Average time cost: 182.0s.
+Length:  11
+std for best accurancy: 0.0
+mean for best accurancy: 0.8310845874416191
+All done!
+Storage on cpu
+-------------------------------------------------------------------------------
+Total Tensors: 470338274 	Used Memory: 1.34G
+-------------------------------------------------------------------------------
+Storage on meta
+-------------------------------------------------------------------------------
+Total Tensors: 20 	Used Memory: 0.00B
+Traceback (most recent call last):
+  File "main.py", line 548, in <module>
+    run(args)
+  File "main.py", line 386, in run
+    reporter.report()
+  File "/home/student/R/fl/PFLlib/system/utils/mem_utils.py", line 220, in report
+    self.print_stats(verbose, target_device=device)
+  File "/home/student/R/fl/PFLlib/system/utils/mem_utils.py", line 197, in print_stats
+    with torch.cuda.device(device):
+  File "/home/student/.local/lib/python3.8/site-packages/torch/cuda/__init__.py", line 361, in __init__
+    self.idx = _get_device_index(device, optional=True)
+  File "/home/student/.local/lib/python3.8/site-packages/torch/cuda/_utils.py", line 34, in _get_device_index
+    raise ValueError(f"Expected a cuda device, but got: {device}")
+ValueError: Expected a cuda device, but got: meta
+Traceback (most recent call last):
+  File "main.py", line 548, in <module>
+    run(args)
+  File "main.py", line 386, in run
+    reporter.report()
+  File "/home/student/R/fl/PFLlib/system/utils/mem_utils.py", line 220, in report
+    self.print_stats(verbose, target_device=device)
+  File "/home/student/R/fl/PFLlib/system/utils/mem_utils.py", line 197, in print_stats
+    with torch.cuda.device(device):
+  File "/home/student/.local/lib/python3.8/site-packages/torch/cuda/__init__.py", line 361, in __init__
+    self.idx = _get_device_index(device, optional=True)
+  File "/home/student/.local/lib/python3.8/site-packages/torch/cuda/_utils.py", line 34, in _get_device_index
+    raise ValueError(f"Expected a cuda device, but got: {device}")
+ValueError: Expected a cuda device, but got: meta

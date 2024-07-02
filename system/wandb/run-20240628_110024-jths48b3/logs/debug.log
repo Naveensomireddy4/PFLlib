@@ -1,0 +1,35 @@
+2024-06-28 11:00:24,333 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-06-28 11:00:24,333 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Configure stats pid to 12236
+2024-06-28 11:00:24,333 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Loading settings from /home/student/R/fl/PFLlib/system/wandb/settings
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'system/main.py', 'program_abspath': '/home/student/R/fl/PFLlib/system/main.py', 'program': '/home/student/R/fl/PFLlib/system/main.py'}
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/R/fl/PFLlib/system/wandb/run-20240628_110024-jths48b3/logs/debug.log
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/R/fl/PFLlib/system/wandb/run-20240628_110024-jths48b3/logs/debug-internal.log
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_init.py:init():560] calling init triggers
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-28 11:00:24,334 INFO    MainThread:12236 [wandb_init.py:init():605] wandb.init() called when a run is still active
+2024-06-28 11:00:24,531 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,565 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,603 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,638 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,673 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,698 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,726 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,759 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,792 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,823 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,859 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,894 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,930 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:24,966 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:25,001 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:25,039 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:25,073 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:25,108 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:25,138 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:25,571 INFO    MainThread:12236 [wandb_watch.py:watch():51] Watching
+2024-06-28 11:00:42,077 WARNING MsgRouterThr:12236 [router.py:message_loop():77] message_loop has been closed

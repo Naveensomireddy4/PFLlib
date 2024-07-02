@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.4.0-186-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-06-26T06:48:42.814360",
+    "startedAt": "2024-06-26T06:48:39.807911",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-data",
+        "BloodMNIST",
+        "-m",
+        "resnet18",
+        "--algorithm",
+        "FedAvg",
+        "-gr",
+        "20",
+        "-did",
+        "0"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "system/main.py",
+    "git": {
+        "remote": "https://github.com/TsingZ0/PFLlib.git",
+        "commit": "47f052069dcd19fbb7e37b14dd37823a363c2464"
+    },
+    "email": "sachugowda@hotmail.com",
+    "root": "/home/student/R/fl/PFLlib",
+    "host": "cse-HP-EliteDesk-800-G1-TWR",
+    "username": "student",
+    "executable": "/usr/bin/python3"
+}

@@ -1,0 +1,895 @@
+2024-06-25 22:39:52,583 INFO    StreamThr :13916 [internal.py:wandb_internal():85] W&B internal server running at pid: 13916, started at: 2024-06-25 22:39:52.583230
+2024-06-25 22:39:52,583 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status
+2024-06-25 22:39:52,611 INFO    WriterThread:13916 [datastore.py:open_for_write():87] open: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\run-l7u6vspq.wandb
+2024-06-25 22:39:52,612 DEBUG   SenderThread:13916 [sender.py:send():378] send: header
+2024-06-25 22:39:53,006 DEBUG   SenderThread:13916 [sender.py:send():378] send: run
+2024-06-25 22:39:53,903 INFO    SenderThread:13916 [dir_watcher.py:__init__():211] watching files in: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files
+2024-06-25 22:39:53,903 INFO    SenderThread:13916 [sender.py:_start_run_threads():1123] run started: l7u6vspq with start time 1719335392.583229
+2024-06-25 22:39:53,909 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: check_version
+2024-06-25 22:39:53,909 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: check_version
+2024-06-25 22:39:54,220 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: run_start
+2024-06-25 22:39:55,334 DEBUG   HandlerThread:13916 [system_info.py:__init__():26] System info init
+2024-06-25 22:39:55,334 DEBUG   HandlerThread:13916 [system_info.py:__init__():41] System info init done
+2024-06-25 22:39:55,334 INFO    HandlerThread:13916 [system_monitor.py:start():194] Starting system monitor
+2024-06-25 22:39:55,334 INFO    SystemMonitor:13916 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-25 22:39:55,334 INFO    HandlerThread:13916 [system_monitor.py:probe():214] Collecting system info
+2024-06-25 22:39:55,334 INFO    SystemMonitor:13916 [interfaces.py:start():188] Started cpu monitoring
+2024-06-25 22:39:55,334 INFO    SystemMonitor:13916 [interfaces.py:start():188] Started disk monitoring
+2024-06-25 22:39:55,334 INFO    SystemMonitor:13916 [interfaces.py:start():188] Started gpu monitoring
+2024-06-25 22:39:55,353 INFO    SystemMonitor:13916 [interfaces.py:start():188] Started memory monitoring
+2024-06-25 22:39:55,367 INFO    SystemMonitor:13916 [interfaces.py:start():188] Started network monitoring
+2024-06-25 22:39:55,367 DEBUG   HandlerThread:13916 [system_info.py:probe():150] Probing system
+2024-06-25 22:39:55,367 DEBUG   HandlerThread:13916 [system_info.py:_probe_git():135] Probing git
+2024-06-25 22:39:56,159 DEBUG   HandlerThread:13916 [system_info.py:_probe_git():143] Probing git done
+2024-06-25 22:39:56,159 DEBUG   HandlerThread:13916 [system_info.py:probe():198] Probing system done
+2024-06-25 22:39:56,159 DEBUG   HandlerThread:13916 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.3', 'heartbeatAt': '2024-06-25T17:09:55.367744', 'startedAt': '2024-06-25T17:09:52.577227', 'docker': None, 'cuda': None, 'args': ('-data', 'BloodMNIST', '-m', 'resnet18', '-algo', 'FedAvg', '-gr', '2000', '-did', '0'), 'state': 'running', 'program': 'C:\\Users\\Bobby\\Akash_Django\\R\\Droupout2 (another copy)\\PFLlib\\system\\main.py', 'codePathLocal': 'main.py', 'codePath': 'system\\main.py', 'git': {'remote': 'https://github.com/TsingZ0/PFLlib.git', 'commit': '47f052069dcd19fbb7e37b14dd37823a363c2464'}, 'email': 'naveensomireddy2112@gmail.com', 'root': 'C:/Users/Bobby/Akash_Django/R/Droupout2 (another copy)/PFLlib', 'host': 'SEVTN', 'username': 'Bobby', 'executable': 'C:\\Users\\Bobby\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3000.0, 'min': 0.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 0.0, 'max': 3000.0}], 'disk': {'/': {'total': 237.63085556030273, 'used': 207.00000381469727}}, 'gpu': 'NVIDIA GeForce GTX 1650 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650 Ti', 'memory_total': 4294967296}], 'memory': {'total': 7.36431884765625}}
+2024-06-25 22:39:56,159 INFO    HandlerThread:13916 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-25 22:39:56,159 INFO    HandlerThread:13916 [system_monitor.py:probe():227] Publishing system info
+2024-06-25 22:39:56,159 INFO    HandlerThread:13916 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-25 22:39:56,192 DEBUG   SenderThread:13916 [sender.py:send():378] send: files
+2024-06-25 22:39:56,192 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-25 22:39:56,929 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-metadata.json
+2024-06-25 22:39:57,444 INFO    wandb-upload_0:13916 [upload_job.py:push():130] Uploaded file C:\Users\Bobby\AppData\Local\Temp\tmp0vsihl79wandb\cryugp0t-wandb-metadata.json
+2024-06-25 22:39:58,203 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:39:58,957 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-25 22:39:58,958 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: python_packages
+2024-06-25 22:39:58,958 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:39:58,960 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:39:59,293 DEBUG   SenderThread:13916 [sender.py:send():378] send: telemetry
+2024-06-25 22:39:59,406 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:39:59,406 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:39:59,960 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\requirements.txt
+2024-06-25 22:40:00,966 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:40:01,112 DEBUG   SenderThread:13916 [sender.py:send():378] send: telemetry
+2024-06-25 22:40:02,980 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:40:03,857 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:03,857 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:04,134 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:07,021 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:40:08,246 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:08,246 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:10,043 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:12,675 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:12,675 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:14,061 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:40:14,061 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:40:15,116 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:40:15,526 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:17,103 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:17,103 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:20,554 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:21,501 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:21,501 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:25,612 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:25,917 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:25,917 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:26,167 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\config.yaml
+2024-06-25 22:40:29,000 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:40:29,000 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:40:30,413 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:30,413 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:31,665 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:34,820 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:34,820 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:36,702 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:39,244 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:39,244 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:41,757 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:43,662 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:43,662 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:44,014 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:40:44,014 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:40:47,466 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:48,074 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:48,074 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:52,486 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:52,486 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:52,502 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:55,375 DEBUG   SystemMonitor:13916 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-25 22:40:55,375 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:40:56,894 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:56,894 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:40:57,561 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:40:59,034 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:40:59,034 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:40:59,485 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:00,874 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:00,883 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:00,883 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:00,885 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:01,514 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:01,652 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:01,652 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:01,652 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:01,657 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:02,542 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:02,659 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:03,555 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:04,658 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:04,659 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:04,659 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:04,660 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:05,426 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:05,426 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:05,437 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:05,437 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:05,576 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:05,785 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:05,786 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:07,588 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:08,467 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:08,741 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:08,741 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:08,741 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:08,741 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:09,602 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:09,609 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:09,624 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:09,624 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:09,624 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:10,215 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:10,215 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:10,603 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:11,084 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:11,085 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:11,085 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:11,086 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:11,442 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:11,443 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:11,443 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:11,443 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:11,605 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:11,605 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:13,396 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:13,396 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:13,396 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:13,396 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:13,644 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:13,644 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:13,915 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:13,915 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:13,915 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:13,915 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:13,915 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:14,040 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:41:14,040 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:41:14,643 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:14,643 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:14,667 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:15,680 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:17,069 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:17,070 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:17,070 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:17,071 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:17,700 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:17,991 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:17,992 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:17,992 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:18,005 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:18,701 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:19,027 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:19,062 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:19,062 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:19,716 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:22,105 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:22,105 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:22,105 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:22,106 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:22,755 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:23,220 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:23,220 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:23,220 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:23,220 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:23,506 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:23,506 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:23,766 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:24,242 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:25,380 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:41:25,776 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:27,532 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:27,532 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:27,532 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:27,532 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:27,782 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:27,928 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:27,928 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:28,513 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:28,513 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:28,513 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:28,513 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:28,784 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:29,052 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:41:29,052 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:41:29,406 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:30,812 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:31,643 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:31,643 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:31,649 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:31,650 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:31,813 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:32,333 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:32,333 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:32,343 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:41:32,344 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:41:32,344 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:41:32,345 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:41:32,824 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:41:32,825 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:41:35,363 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:36,831 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:36,831 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:40,417 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:41,247 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:41,248 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:44,064 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:41:44,064 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:41:45,671 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:45,671 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:46,412 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:50,103 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:50,103 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:51,455 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:54,518 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:54,518 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:55,388 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:41:57,401 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:41:58,946 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:58,946 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:41:59,588 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:41:59,588 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:42:02,957 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:03,343 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:03,343 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:07,991 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:12,916 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:12,917 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:13,019 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:17,299 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:17,299 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:18,066 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:20,893 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:42:20,893 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:42:21,697 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:21,697 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:23,284 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:25,401 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:42:26,082 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:26,082 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:28,421 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:30,465 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:30,465 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:33,462 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:34,843 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:34,843 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:35,906 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:42:35,906 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:42:39,218 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:39,219 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:39,338 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:43,653 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:43,653 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:44,377 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:48,030 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:48,030 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:49,399 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:51,284 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:42:51,285 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:42:52,419 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:52,419 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:54,711 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:42:55,406 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:42:56,801 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:42:56,801 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:00,464 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:01,183 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:01,183 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:05,489 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:05,575 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:05,575 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:06,287 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:43:06,287 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:43:09,962 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:09,962 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:10,995 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:16,037 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:18,786 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:18,786 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:21,064 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:23,161 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:23,161 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:25,412 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:43:26,414 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:27,536 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:27,536 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:31,440 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:31,920 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:31,920 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:36,300 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:36,300 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:36,475 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:40,682 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:40,682 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:41,509 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:45,063 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:45,063 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:46,563 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:49,485 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:49,485 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:51,596 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:53,873 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:53,873 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:55,417 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:43:57,424 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:43:58,250 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:43:58,250 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:02,451 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:02,635 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:02,635 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:07,038 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:07,039 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:07,489 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:11,417 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:11,417 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:12,516 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:15,792 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:15,792 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:17,570 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:22,591 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:24,643 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:24,644 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:25,418 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:44:27,508 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:44:27,509 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:44:27,842 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:29,041 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:29,041 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:32,890 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:33,433 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:33,433 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:36,815 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,815 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,817 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,827 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,827 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,827 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,827 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,827 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,833 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,834 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,834 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,834 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,845 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,846 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,850 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,877 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,877 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,878 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,881 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,881 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,881 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,883 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,883 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,883 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,883 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,883 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,883 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,889 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,890 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,890 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,894 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,894 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,894 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,897 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,897 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,902 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,904 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,904 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,905 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,911 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,912 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,912 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,918 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,919 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,919 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,963 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,964 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,964 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,990 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,991 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,991 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,994 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,994 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:36,995 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,018 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,018 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,019 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,043 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,043 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,044 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,097 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,097 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,097 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,097 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:44:37,809 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:37,810 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:37,918 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:42,245 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:42,245 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:42,282 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:44:42,283 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:44:43,729 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:46,673 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:46,674 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:48,779 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:51,086 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:51,086 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:53,809 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:44:55,431 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:44:55,622 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:55,622 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:44:57,291 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:44:57,291 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:44:59,732 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:00,063 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:00,064 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:04,511 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:04,511 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:04,767 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:08,926 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:08,926 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:09,791 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:12,280 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:45:12,280 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:45:13,346 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:13,346 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:15,706 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:17,082 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:17,105 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:45:17,114 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:45:17,123 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:45:17,760 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:17,760 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:17,875 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:45:21,141 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:25,431 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:45:26,444 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:27,314 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:45:27,314 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:45:30,750 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:30,750 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:31,716 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:33,902 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:33,902 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:45:33,903 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:45:33,909 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:45:34,070 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:45:35,077 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:45:35,153 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:35,153 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:36,882 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:37,102 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:45:39,531 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:39,532 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:41,937 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:42,318 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:45:42,318 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:45:43,965 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:43,965 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:45,212 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:45:47,232 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:45:47,520 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:48,380 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:48,380 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:52,552 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:45:52,803 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:52,803 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:54,094 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,094 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,095 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,140 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,140 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,140 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,143 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,144 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,145 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,147 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,147 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,148 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,148 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,148 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,150 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,152 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,152 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,153 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,155 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,156 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,156 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,157 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,158 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,158 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,161 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,162 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,162 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,164 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,165 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,172 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,172 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,173 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,173 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,178 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,179 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,179 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,181 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,182 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,182 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,189 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,190 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,190 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,196 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,196 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,196 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,209 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,210 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,210 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,261 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,261 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,261 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,261 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,261 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,261 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,299 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,299 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,300 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,322 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,322 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,323 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,323 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,323 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,324 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:54,324 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:45:55,447 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:45:57,213 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:57,213 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:45:57,343 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:45:57,345 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:45:57,745 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:01,693 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:01,693 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:02,785 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:06,095 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:06,095 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:07,824 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:10,504 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:10,504 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:12,334 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:46:12,335 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:46:13,795 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:15,020 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:15,021 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:18,831 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:19,430 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:19,430 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:23,841 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:23,841 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:23,895 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:25,462 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:46:27,344 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:46:27,344 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:46:28,249 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:28,249 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:29,727 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:31,752 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:34,016 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:34,045 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:34,057 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:34,070 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:34,735 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:34,735 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:34,735 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:34,735 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:34,749 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:34,791 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:37,220 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:37,220 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:37,845 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:39,781 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:40,108 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:40,108 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:40,108 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:40,126 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:40,904 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:40,906 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:40,906 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:40,906 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:40,912 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:41,646 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:41,646 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:41,914 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:42,367 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:46:42,368 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:46:42,920 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:44,699 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:44,699 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:44,699 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:44,714 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:44,963 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:45,699 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:45,699 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:45,700 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:45,700 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:45,707 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:45,990 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:46,057 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:46,058 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:47,002 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:48,699 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:48,699 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:48,699 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:48,719 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:49,029 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:49,476 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:49,476 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:49,476 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:49,492 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:50,053 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:50,499 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:50,499 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:51,078 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:51,504 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:52,934 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:52,935 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:52,935 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:52,942 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:53,110 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:53,767 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:53,767 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:53,767 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:53,793 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:54,122 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:54,924 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:54,924 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:55,144 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:55,470 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:46:56,414 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:56,414 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:56,414 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:56,421 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:57,150 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:46:57,150 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:46:57,150 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:46:57,150 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:46:57,150 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:46:57,166 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:46:57,380 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:46:57,381 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:46:59,214 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:46:59,352 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:46:59,352 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:01,414 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:01,414 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:01,414 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:01,414 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:02,248 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:02,333 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:02,334 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:02,334 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:02,334 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:02,337 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:03,261 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:03,261 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:03,859 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:03,860 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:06,029 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:06,030 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:06,030 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:06,037 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:06,370 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:07,143 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:07,144 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:07,145 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:07,151 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:07,379 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:08,156 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:08,447 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:08,447 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:09,393 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:11,852 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:11,853 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:11,853 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:11,859 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:12,391 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:47:12,391 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:47:12,429 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:12,670 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:12,731 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:12,731 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:12,732 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:12,901 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:12,901 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:13,440 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:13,441 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:13,755 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:17,293 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:17,296 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:18,782 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:21,323 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:21,324 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:21,324 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:21,330 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:21,508 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:21,725 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:21,725 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:22,331 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 22:47:22,332 DEBUG   SenderThread:13916 [sender.py:send():378] send: history
+2024-06-25 22:47:22,332 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 22:47:22,359 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:22,522 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:23,523 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:24,081 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:25,480 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:47:25,541 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:26,142 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:26,142 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:27,401 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:47:27,408 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:47:29,871 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:30,667 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:30,667 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:33,701 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:35,087 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:35,109 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:35,109 ERROR   gpu       :13916 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-06-25 22:47:35,740 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:40,137 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:42,600 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 22:47:42,600 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 22:47:43,468 DEBUG   SenderThread:13916 [sender.py:send():378] send: exit
+2024-06-25 22:47:43,468 INFO    SenderThread:13916 [sender.py:send_exit():585] handling exit code: 255
+2024-06-25 22:47:43,468 INFO    SenderThread:13916 [sender.py:send_exit():587] handling runtime: 469
+2024-06-25 22:47:43,474 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:43,474 INFO    SenderThread:13916 [sender.py:send_exit():593] send defer
+2024-06-25 22:47:43,474 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,474 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-25 22:47:43,474 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,474 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-25 22:47:43,474 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 1
+2024-06-25 22:47:43,475 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,475 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-25 22:47:43,475 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,475 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-25 22:47:43,475 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 2
+2024-06-25 22:47:43,475 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,475 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-25 22:47:43,475 INFO    HandlerThread:13916 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-25 22:47:43,475 DEBUG   SystemMonitor:13916 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-25 22:47:43,475 DEBUG   SystemMonitor:13916 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-25 22:47:43,475 INFO    HandlerThread:13916 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-25 22:47:43,475 INFO    HandlerThread:13916 [interfaces.py:finish():200] Joined disk monitor
+2024-06-25 22:47:43,815 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:43,892 INFO    HandlerThread:13916 [interfaces.py:finish():200] Joined gpu monitor
+2024-06-25 22:47:43,892 INFO    HandlerThread:13916 [interfaces.py:finish():200] Joined memory monitor
+2024-06-25 22:47:43,892 INFO    HandlerThread:13916 [interfaces.py:finish():200] Joined network monitor
+2024-06-25 22:47:43,892 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,893 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-25 22:47:43,893 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 3
+2024-06-25 22:47:43,893 DEBUG   SenderThread:13916 [sender.py:send():378] send: stats
+2024-06-25 22:47:43,893 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,893 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-25 22:47:43,893 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,893 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-25 22:47:43,893 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 4
+2024-06-25 22:47:43,893 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,893 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-25 22:47:43,894 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,894 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-25 22:47:43,894 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 5
+2024-06-25 22:47:43,894 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,894 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-25 22:47:43,898 DEBUG   SenderThread:13916 [sender.py:send():378] send: summary
+2024-06-25 22:47:43,905 INFO    SenderThread:13916 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 22:47:43,905 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,905 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-25 22:47:43,905 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 6
+2024-06-25 22:47:43,905 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,905 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-25 22:47:43,905 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,905 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-25 22:47:43,905 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 7
+2024-06-25 22:47:43,905 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:43,905 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:43,905 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-25 22:47:43,905 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:43,905 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-25 22:47:44,480 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:44,819 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:45,447 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 8
+2024-06-25 22:47:45,447 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:45,447 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:45,454 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-25 22:47:45,454 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:45,454 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-25 22:47:45,454 INFO    SenderThread:13916 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-25 22:47:45,454 INFO    SenderThread:13916 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-25 22:47:45,487 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:45,824 INFO    Thread-16 :13916 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:47,780 INFO    SenderThread:13916 [job_builder.py:build():541] adding wandb-job metadata file
+2024-06-25 22:47:48,084 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 9
+2024-06-25 22:47:48,085 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:48,085 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:48,086 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-25 22:47:48,086 DEBUG   SenderThread:13916 [sender.py:send():378] send: artifact
+2024-06-25 22:47:48,379 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:50,175 INFO    wandb-upload_0:13916 [upload_job.py:push():85] Skipped uploading C:\Users\Bobby\AppData\Local\wandb\wandb\artifacts\staging\tmpj04owcjk
+2024-06-25 22:47:51,442 INFO    wandb-upload_1:13916 [upload_job.py:push():88] Uploaded file C:\Users\Bobby\AppData\Local\Temp\tmp28l008u0\wandb-job.json
+2024-06-25 22:47:53,447 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-25 22:47:53,701 INFO    SenderThread:13916 [sender.py:send_artifact():1467] sent artifact job-https___github.com_TsingZ0_PFLlib.git_system_main.py - {'id': 'QXJ0aWZhY3Q6OTI2MDk1OTg3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjc4OTQ3NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1OTcxMzE0', 'versionIndex': 0}}}
+2024-06-25 22:47:53,702 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:53,702 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 22:47:53,702 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-25 22:47:53,702 INFO    SenderThread:13916 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-25 22:47:53,895 INFO    SenderThread:13916 [dir_watcher.py:finish():388] scan: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files
+2024-06-25 22:47:53,895 INFO    SenderThread:13916 [dir_watcher.py:finish():402] scan save: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\config.yaml config.yaml
+2024-06-25 22:47:53,896 INFO    SenderThread:13916 [dir_watcher.py:finish():402] scan save: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log output.log
+2024-06-25 22:47:53,898 INFO    SenderThread:13916 [dir_watcher.py:finish():402] scan save: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\requirements.txt requirements.txt
+2024-06-25 22:47:53,900 INFO    SenderThread:13916 [dir_watcher.py:finish():402] scan save: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-metadata.json wandb-metadata.json
+2024-06-25 22:47:53,900 INFO    SenderThread:13916 [dir_watcher.py:finish():402] scan save: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json wandb-summary.json
+2024-06-25 22:47:53,900 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 10
+2024-06-25 22:47:53,901 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:53,901 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:53,903 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-25 22:47:53,904 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:53,904 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-25 22:47:53,905 INFO    SenderThread:13916 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-25 22:47:54,462 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:54,462 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:54,670 INFO    wandb-upload_0:13916 [upload_job.py:push():130] Uploaded file C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\config.yaml
+2024-06-25 22:47:55,052 INFO    wandb-upload_2:13916 [upload_job.py:push():130] Uploaded file C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\requirements.txt
+2024-06-25 22:47:55,357 INFO    wandb-upload_1:13916 [upload_job.py:push():130] Uploaded file C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\output.log
+2024-06-25 22:47:55,463 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:55,463 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:55,823 INFO    wandb-upload_3:13916 [upload_job.py:push():130] Uploaded file C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\files\wandb-summary.json
+2024-06-25 22:47:56,026 INFO    Thread-15 (_thread_body):13916 [sender.py:transition_state():613] send defer: 11
+2024-06-25 22:47:56,027 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:56,027 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-25 22:47:56,028 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:56,028 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-25 22:47:56,028 INFO    SenderThread:13916 [file_pusher.py:join():175] waiting for file pusher
+2024-06-25 22:47:56,029 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 12
+2024-06-25 22:47:56,030 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:56,030 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-25 22:47:56,030 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:56,030 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-25 22:47:56,030 INFO    SenderThread:13916 [file_stream.py:finish():601] file stream finish called
+2024-06-25 22:47:56,467 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:57,407 INFO    SenderThread:13916 [file_stream.py:finish():605] file stream finish is done
+2024-06-25 22:47:57,407 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 13
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:57,407 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:57,407 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-25 22:47:57,407 INFO    SenderThread:13916 [sender.py:transition_state():613] send defer: 14
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send():378] send: final
+2024-06-25 22:47:57,407 INFO    HandlerThread:13916 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send():378] send: footer
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: defer
+2024-06-25 22:47:57,407 INFO    SenderThread:13916 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: server_info
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-25 22:47:57,407 DEBUG   SenderThread:13916 [sender.py:send_request():405] send_request: server_info
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-25 22:47:57,407 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-25 22:47:57,747 INFO    MainThread:13916 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-06-25 22:47:57,758 INFO    MainThread:13916 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-06-25 22:47:57,759 INFO    MainThread:13916 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-06-25 22:47:57,760 DEBUG   HandlerThread:13916 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-25 22:47:57,760 INFO    HandlerThread:13916 [handler.py:finish():882] shutting down handler
+2024-06-25 22:47:58,421 INFO    WriterThread:13916 [datastore.py:close():296] close: C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\wandb\run-20240625_223952-l7u6vspq\run-l7u6vspq.wandb
+2024-06-25 22:47:58,748 INFO    SenderThread:13916 [sender.py:finish():1545] shutting down sender
+2024-06-25 22:47:58,748 INFO    SenderThread:13916 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-25 22:47:58,748 INFO    SenderThread:13916 [file_pusher.py:join():175] waiting for file pusher

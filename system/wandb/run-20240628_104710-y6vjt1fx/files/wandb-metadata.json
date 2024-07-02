@@ -1,0 +1,91 @@
+{
+    "os": "Linux-5.4.0-187-generic-x86_64-with-glibc2.31",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-06-28T05:17:10.932898",
+    "startedAt": "2024-06-28T05:17:10.024194",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-data",
+        "BloodMNIST",
+        "-m",
+        "resnet18",
+        "--algorithm",
+        "FedAvg",
+        "-gr",
+        "100",
+        "-did",
+        "0"
+    ],
+    "state": "running",
+    "program": "/home/student/R/fl/PFLlib/system/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "system/main.py",
+    "git": {
+        "remote": "https://github.com/TsingZ0/PFLlib.git",
+        "commit": "47f052069dcd19fbb7e37b14dd37823a363c2464"
+    },
+    "email": "sachugowda@hotmail.com",
+    "root": "/home/student/R/fl/PFLlib",
+    "host": "cse-HP-EliteDesk-800-G1-TWR",
+    "username": "student",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2585.38375,
+        "min": 800.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2610.17,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2613.116,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2605.1,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2606.284,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2349.325,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2689.207,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2537.008,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2672.86,
+            "min": 800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 258.4741439819336,
+            "used": 184.03463745117188
+        }
+    },
+    "memory": {
+        "total": 15.53030014038086
+    }
+}

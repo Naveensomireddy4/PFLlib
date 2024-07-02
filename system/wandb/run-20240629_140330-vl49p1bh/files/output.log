@@ -1,0 +1,514 @@
+SimpleCnn(
+  (conv1): Conv2d(28, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=1568, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=10, bias=True)
+)
+cuda is not avaiable.
+==================================================
+Algorithm: FedAvg
+Local batch size: 10
+Local epochs: 1
+Local learing rate: 0.005
+Local learing rate decay: False
+Total number of clients: 20
+Clients join in each round: 1.0
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: BloodMNIST
+Number of classes: 10
+Backbone: resnet18
+Using device: cpu
+Using DP: False
+Auto break: False
+Global rounds: 100
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+============= Running time: 0th =============
+Creating server and clients ...
+x(
+  (conv1): Conv2d(28, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): a(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): a(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): a(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): a(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): a(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+  (fc): Linear(in_features=10, out_features=10, bias=True)
+)
+Join ratio / total clients: 1.0 / 20
+Finished creating server and clients.
+Dropped clients: [4, 5, 13, 0, 7, 18, 11, 12, 16, 2]
+drop classif com
+-------------Round number: 0-------------
+Evaluate global model
+Averaged Train Loss: 2.2691
+Averaged Test Accurancy: 0.0703
+Averaged Test AUC: 0.5693
+Std Test Accurancy: 0.0527
+Std Test AUC: 0.0483
+clients: 10
+Training client: 1, Time Cost: 3.262660503387451, Train Accuracy: 50.00%
+Training client: 3, Time Cost: 3.4913411140441895, Train Accuracy: 43.87%
+Training client: 6, Time Cost: 2.122042417526245, Train Accuracy: 24.74%
+Training client: 8, Time Cost: 3.2608909606933594, Train Accuracy: 23.33%
+Training client: 9, Time Cost: 2.6352736949920654, Train Accuracy: 28.33%
+Training client: 10, Time Cost: 3.722994565963745, Train Accuracy: 39.09%
+Training client: 14, Time Cost: 3.423610210418701, Train Accuracy: 25.48%
+Training client: 15, Time Cost: 4.392864942550659, Train Accuracy: 53.08%
+Training client: 17, Time Cost: 3.7791225910186768, Train Accuracy: 34.41%
+Training client: 19, Time Cost: 66.54547810554504, Train Accuracy: 72.05%
+length of uploaded models 20
+Dropped clients: [8, 11, 15, 10, 12, 18, 14, 13, 16, 7]
+drop classif com
+-------------Round number: 1-------------
+Evaluate global model
+Averaged Train Loss: 2.1800
+Averaged Test Accurancy: 0.2862
+Averaged Test AUC: 0.7523
+Std Test Accurancy: 0.1150
+Std Test AUC: 0.0666
+clients: 10
+Training client: 0, Time Cost: 2.9292209148406982, Train Accuracy: 78.08%
+Training client: 1, Time Cost: 3.235114097595215, Train Accuracy: 80.00%
+Training client: 2, Time Cost: 3.9988698959350586, Train Accuracy: 65.00%
+Training client: 3, Time Cost: 3.5221245288848877, Train Accuracy: 85.81%
+Training client: 4, Time Cost: 3.3989877700805664, Train Accuracy: 74.00%
+Training client: 5, Time Cost: 1.4852399826049805, Train Accuracy: 60.00%
+Training client: 6, Time Cost: 2.104029417037964, Train Accuracy: 40.00%
+Training client: 9, Time Cost: 2.673980951309204, Train Accuracy: 74.58%
+Training client: 17, Time Cost: 3.7553224563598633, Train Accuracy: 81.76%
+Training client: 19, Time Cost: 65.4980673789978, Train Accuracy: 56.60%
+length of uploaded models 20
+Dropped clients: [0, 7, 3, 8, 5, 11, 4, 6, 9, 14]
+drop classif com
+-------------Round number: 2-------------
+Evaluate global model
+Averaged Train Loss: 1.3190
+Averaged Test Accurancy: 0.4813
+Averaged Test AUC: 0.8881
+Std Test Accurancy: 0.0886
+Std Test AUC: 0.0295
+clients: 10
+Training client: 1, Time Cost: 4.360535621643066, Train Accuracy: 75.52%
+Training client: 2, Time Cost: 5.270539999008179, Train Accuracy: 82.78%
+Training client: 10, Time Cost: 5.159919738769531, Train Accuracy: 87.27%
+Training client: 12, Time Cost: 5.359446048736572, Train Accuracy: 87.10%
+Training client: 13, Time Cost: 4.871361017227173, Train Accuracy: 71.94%
+Training client: 15, Time Cost: 4.568028211593628, Train Accuracy: 64.36%
+Training client: 16, Time Cost: 3.4060983657836914, Train Accuracy: 89.33%
+Training client: 17, Time Cost: 3.876711130142212, Train Accuracy: 58.82%
+Training client: 18, Time Cost: 2.8117923736572266, Train Accuracy: 90.00%
+Training client: 19, Time Cost: 68.31758832931519, Train Accuracy: 81.30%
+length of uploaded models 20
+Dropped clients: [10, 14, 16, 2, 3, 8, 15, 7, 17, 13]
+drop classif com
+-------------Round number: 3-------------
+Evaluate global model
+Averaged Train Loss: 0.7767
+Averaged Test Accurancy: 0.7006
+Averaged Test AUC: 0.9512
+Std Test Accurancy: 0.0814
+Std Test AUC: 0.0215
+clients: 10
+Training client: 0, Time Cost: 2.884539842605591, Train Accuracy: 86.92%
+Training client: 1, Time Cost: 3.1662025451660156, Train Accuracy: 78.97%
+Training client: 4, Time Cost: 3.3336968421936035, Train Accuracy: 79.33%
+Training client: 5, Time Cost: 1.4412524700164795, Train Accuracy: 90.00%
+Training client: 6, Time Cost: 2.441706657409668, Train Accuracy: 75.79%
+Training client: 9, Time Cost: 2.844827890396118, Train Accuracy: 84.58%
+Training client: 11, Time Cost: 4.033750534057617, Train Accuracy: 90.00%
+Training client: 12, Time Cost: 3.7052340507507324, Train Accuracy: 49.03%
+Training client: 18, Time Cost: 2.6824607849121094, Train Accuracy: 89.17%
+Training client: 19, Time Cost: 65.61519813537598, Train Accuracy: 81.48%
+length of uploaded models 20
+Dropped clients: [7, 11, 3, 12, 18, 8, 0, 16, 4, 5]
+drop classif com
+-------------Round number: 4-------------
+Evaluate global model
+Averaged Train Loss: 0.6973
+Averaged Test Accurancy: 0.7398
+Averaged Test AUC: 0.9560
+Std Test Accurancy: 0.0658
+Std Test AUC: 0.0203
+clients: 10
+Training client: 1, Time Cost: 3.287322521209717, Train Accuracy: 82.41%
+Training client: 2, Time Cost: 4.176498174667358, Train Accuracy: 91.11%
+Training client: 6, Time Cost: 2.1883151531219482, Train Accuracy: 91.58%
+Training client: 9, Time Cost: 2.7031195163726807, Train Accuracy: 74.17%
+Training client: 10, Time Cost: 3.650063991546631, Train Accuracy: 91.52%
+Training client: 13, Time Cost: 4.66264533996582, Train Accuracy: 89.72%
+Training client: 14, Time Cost: 4.36096978187561, Train Accuracy: 59.35%
+Training client: 15, Time Cost: 4.411340951919556, Train Accuracy: 83.85%
+Training client: 17, Time Cost: 3.809250593185425, Train Accuracy: 87.35%
+Training client: 19, Time Cost: 69.93537306785583, Train Accuracy: 80.73%
+length of uploaded models 20
+Batch 1 clients: [9, 5, 2, 7, 8, 18, 16, 4, 6, 0, 3, 1]
+Batch 2 clients: [10, 11, 12, 13, 14, 15, 17, 19]
+hello
+Batch 1 clients: [9, 5, 2, 7, 8, 18, 16, 4, 6, 0, 3, 1]
+Batch 2 clients: [10, 11, 12, 13, 14, 15, 17, 19]
+Training round 1/253 for batch 9Training round 1/58 for batch 10
+<class 'list'><class 'list'>
+..................................................  6.04.0  ..................................................
+Training client: 6, Time Cost: 30.102642059326172, Train Accuracy: 90.00%
+Training client: 18, Time Cost: 34.66994905471802, Train Accuracy: 92.92%
+Training client: 0, Time Cost: 36.54309439659119, Train Accuracy: 90.38%
+Training client: 14, Time Cost: 41.46082615852356, Train Accuracy: 85.16%
+Training client: 12, Time Cost: 41.58785939216614, Train Accuracy: 66.77%
+Training client: 7, Time Cost: 38.45170044898987, Train Accuracy: 86.07%
+Training client: 4, Time Cost: 38.944793462753296, Train Accuracy: 88.67%
+Training client: 11, Time Cost: 42.580055713653564, Train Accuracy: 85.59%
+Training client: 16, Time Cost: 39.4777557849884, Train Accuracy: 89.67%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 2/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 19.167757987976074, Train Accuracy: 93.16%
+Training client: 18, Time Cost: 22.326330423355103, Train Accuracy: 93.75%
+Training client: 9, Time Cost: 22.66953992843628, Train Accuracy: 82.92%
+Training client: 0, Time Cost: 23.630946159362793, Train Accuracy: 86.92%
+Training client: 1, Time Cost: 24.334994316101074, Train Accuracy: 91.38%
+Training client: 8, Time Cost: 24.737224817276, Train Accuracy: 77.33%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 3/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 17.488004207611084, Train Accuracy: 36.84%
+Training client: 9, Time Cost: 20.885056495666504, Train Accuracy: 87.08%
+Training client: 0, Time Cost: 22.136186122894287, Train Accuracy: 83.46%
+Training client: 7, Time Cost: 22.71506381034851, Train Accuracy: 89.64%
+Training client: 4, Time Cost: 23.181689977645874, Train Accuracy: 93.00%
+Training client: 1, Time Cost: 23.24943733215332, Train Accuracy: 87.24%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 4/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 16.775498867034912, Train Accuracy: 89.47%
+Training client: 9, Time Cost: 20.146183967590332, Train Accuracy: 92.92%
+Training client: 18, Time Cost: 20.18279719352722, Train Accuracy: 80.83%
+Training client: 7, Time Cost: 21.919235229492188, Train Accuracy: 79.29%
+Training client: 1, Time Cost: 22.382347345352173, Train Accuracy: 86.21%
+Training client: 2, Time Cost: 23.918627738952637, Train Accuracy: 89.72%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 5/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 10.957728385925293, Train Accuracy: 80.77%
+Training client: 1, Time Cost: 22.701777935028076, Train Accuracy: 84.48%
+Training client: 4, Time Cost: 22.88223695755005, Train Accuracy: 17.67%
+Training client: 16, Time Cost: 23.077598333358765, Train Accuracy: 79.33%
+Training client: 8, Time Cost: 23.19483518600464, Train Accuracy: 74.67%
+Training client: 2, Time Cost: 24.20392107963562, Train Accuracy: 67.78%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 6/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 18.43663763999939, Train Accuracy: 95.26%
+Training client: 9, Time Cost: 22.388866424560547, Train Accuracy: 92.50%
+Training client: 0, Time Cost: 23.32991909980774, Train Accuracy: 91.92%
+Training client: 7, Time Cost: 23.835904598236084, Train Accuracy: 92.50%
+Training client: 16, Time Cost: 24.585795164108276, Train Accuracy: 88.00%
+Training client: 8, Time Cost: 24.71829843521118, Train Accuracy: 89.33%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 7/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 17.600674390792847, Train Accuracy: 94.74%
+Training client: 1, Time Cost: 23.9254207611084, Train Accuracy: 90.34%
+Training client: 16, Time Cost: 24.5024995803833, Train Accuracy: 90.67%
+Training client: 8, Time Cost: 24.538516521453857, Train Accuracy: 93.67%
+Training client: 4, Time Cost: 24.58417844772339, Train Accuracy: 86.33%
+Training client: 3, Time Cost: 24.781676054000854, Train Accuracy: 96.13%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 8/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 11.47487187385559, Train Accuracy: 89.23%
+Training client: 0, Time Cost: 21.43197751045227, Train Accuracy: 88.08%
+Training client: 4, Time Cost: 23.471972465515137, Train Accuracy: 46.67%
+Training client: 16, Time Cost: 23.703125953674316, Train Accuracy: 93.33%
+Training client: 3, Time Cost: 23.904280185699463, Train Accuracy: 96.13%
+Training client: 2, Time Cost: 24.783634424209595, Train Accuracy: 87.78%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 9/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 9, Time Cost: 21.18337869644165, Train Accuracy: 91.25%
+Training client: 0, Time Cost: 21.742004871368408, Train Accuracy: 88.46%
+Training client: 1, Time Cost: 23.452207565307617, Train Accuracy: 89.66%
+Training client: 4, Time Cost: 23.81174659729004, Train Accuracy: 88.00%
+Training client: 8, Time Cost: 23.901233673095703, Train Accuracy: 90.67%
+Training client: 3, Time Cost: 24.10872197151184, Train Accuracy: 90.65%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 10/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 11.833359241485596, Train Accuracy: 85.38%
+Training client: 6, Time Cost: 16.597310304641724, Train Accuracy: 88.42%
+Training client: 0, Time Cost: 20.53879475593567, Train Accuracy: 81.92%
+Training client: 1, Time Cost: 21.64824938774109, Train Accuracy: 85.86%
+Training client: 16, Time Cost: 21.830063819885254, Train Accuracy: 95.67%
+Training client: 3, Time Cost: 22.413164615631104, Train Accuracy: 93.55%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 11/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 16.79598045349121, Train Accuracy: 92.11%
+Training client: 0, Time Cost: 22.162931203842163, Train Accuracy: 85.77%
+Training client: 1, Time Cost: 23.35022497177124, Train Accuracy: 88.28%
+Training client: 8, Time Cost: 24.05162239074707, Train Accuracy: 96.00%
+Training client: 3, Time Cost: 24.341062784194946, Train Accuracy: 92.58%
+Training client: 2, Time Cost: 25.20788335800171, Train Accuracy: 95.28%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 12/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 11.59304928779602, Train Accuracy: 95.38%
+Training client: 9, Time Cost: 19.656651735305786, Train Accuracy: 91.25%
+Training client: 0, Time Cost: 20.863649368286133, Train Accuracy: 89.62%
+Training client: 7, Time Cost: 21.561915636062622, Train Accuracy: 92.86%
+Training client: 4, Time Cost: 22.083066940307617, Train Accuracy: 85.33%
+Training client: 3, Time Cost: 22.42401909828186, Train Accuracy: 96.13%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 13/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 6, Time Cost: 16.239808320999146, Train Accuracy: 92.11%
+Training client: 0, Time Cost: 21.76454472541809, Train Accuracy: 87.69%
+Training client: 1, Time Cost: 23.38652992248535, Train Accuracy: 92.41%
+Training client: 16, Time Cost: 23.555488109588623, Train Accuracy: 92.33%
+Training client: 3, Time Cost: 23.559170484542847, Train Accuracy: 91.94%
+Training client: 2, Time Cost: 24.72545599937439, Train Accuracy: 75.28%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 14/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 10.74344801902771, Train Accuracy: 86.92%
+Training client: 6, Time Cost: 15.86824107170105, Train Accuracy: 94.74%
+Training client: 0, Time Cost: 19.11732316017151, Train Accuracy: 82.69%
+Training client: 1, Time Cost: 20.242374897003174, Train Accuracy: 88.62%
+Training client: 16, Time Cost: 20.550527572631836, Train Accuracy: 96.67%
+Training client: 4, Time Cost: 20.59073495864868, Train Accuracy: 94.67%
+......................... leng of drop and ffrnd
+6
+6
+Training client: 19, Time Cost: 405.916624546051, Train Accuracy: 84.25%
+......................... leng of drop and ffrnd
+4
+4
+length of uploaded models 20
+length of uploaded models 20
+Training round 2/58 for batch 10
+<class 'list'>
+......................... 4.0 .........................
+Training round 15/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 17.108617782592773, Train Accuracy: 8.46%
+Training client: 6, Time Cost: 24.459964513778687, Train Accuracy: 7.37%
+Training client: 0, Time Cost: 31.675029277801514, Train Accuracy: 42.69%
+Training client: 1, Time Cost: 33.924089431762695, Train Accuracy: 25.52%
+Training client: 8, Time Cost: 34.59288787841797, Train Accuracy: 77.33%
+Training client: 3, Time Cost: 35.044875621795654, Train Accuracy: 60.65%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training client: 10, Time Cost: 37.28302240371704, Train Accuracy: 87.88%
+Training client: 11, Time Cost: 37.46243214607239, Train Accuracy: 68.53%
+Training round 16/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 13, Time Cost: 38.76719689369202, Train Accuracy: 56.94%
+Training client: 5, Time Cost: 12.2298002243042, Train Accuracy: 80.77%
+Training client: 9, Time Cost: 20.251651763916016, Train Accuracy: 77.50%
+Training client: 1, Time Cost: 22.897671699523926, Train Accuracy: 83.10%
+Training client: 16, Time Cost: 23.529819011688232, Train Accuracy: 87.67%
+Training client: 4, Time Cost: 23.692978858947754, Train Accuracy: 68.67%
+Training client: 3, Time Cost: 23.77744746208191, Train Accuracy: 87.74%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 17/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 11.644315004348755, Train Accuracy: 71.54%
+Training client: 9, Time Cost: 18.979044437408447, Train Accuracy: 87.08%
+Training client: 0, Time Cost: 20.14578890800476, Train Accuracy: 90.38%
+Training client: 1, Time Cost: 21.1557354927063, Train Accuracy: 80.00%
+Training client: 4, Time Cost: 21.819562435150146, Train Accuracy: 86.67%
+Training client: 3, Time Cost: 21.957447052001953, Train Accuracy: 68.06%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 18/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 11.31444001197815, Train Accuracy: 93.85%
+Training client: 18, Time Cost: 19.149989128112793, Train Accuracy: 76.67%
+Training client: 4, Time Cost: 22.06736946105957, Train Accuracy: 89.33%
+Training client: 1, Time Cost: 22.11519169807434, Train Accuracy: 84.83%
+Training client: 3, Time Cost: 22.89974284172058, Train Accuracy: 92.58%
+Training client: 2, Time Cost: 23.55199432373047, Train Accuracy: 52.78%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 19/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 12.08945894241333, Train Accuracy: 76.92%
+Training client: 6, Time Cost: 16.232466220855713, Train Accuracy: 94.21%
+Training client: 18, Time Cost: 18.71400547027588, Train Accuracy: 91.67%
+Training client: 9, Time Cost: 18.90871238708496, Train Accuracy: 85.83%
+Training client: 0, Time Cost: 19.602532386779785, Train Accuracy: 87.31%
+Training client: 1, Time Cost: 20.08325719833374, Train Accuracy: 88.28%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 20/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 9, Time Cost: 21.371357202529907, Train Accuracy: 88.75%
+Training client: 0, Time Cost: 23.037472248077393, Train Accuracy: 91.54%
+Training client: 7, Time Cost: 23.90757989883423, Train Accuracy: 83.93%
+Training client: 16, Time Cost: 24.71696186065674, Train Accuracy: 95.00%
+Training client: 8, Time Cost: 24.847172498703003, Train Accuracy: 84.33%
+Training client: 4, Time Cost: 24.958985328674316, Train Accuracy: 90.00%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 21/253 for batch 9
+<class 'list'>
+......................... 6.0 .........................
+Training client: 5, Time Cost: 12.68999195098877, Train Accuracy: 93.85%
+Training client: 6, Time Cost: 16.59480381011963, Train Accuracy: 93.68%
+Training client: 18, Time Cost: 19.35218048095703, Train Accuracy: 85.00%
+Training client: 1, Time Cost: 21.660292863845825, Train Accuracy: 88.28%
+Training client: 4, Time Cost: 22.236875534057617, Train Accuracy: 87.33%
+Training client: 2, Time Cost: 23.372997283935547, Train Accuracy: 94.72%
+......................... leng of drop and ffrnd
+6
+6
+length of uploaded models 20
+Training round 22/253 for batch 9
+<class 'list'>

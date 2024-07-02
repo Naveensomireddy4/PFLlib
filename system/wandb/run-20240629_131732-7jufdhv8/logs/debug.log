@@ -1,0 +1,61 @@
+2024-06-29 13:17:32,506 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-06-29 13:17:32,506 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Configure stats pid to 14212
+2024-06-29 13:17:32,506 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Loading settings from /home/student/R/fl/PFLlib/system/wandb/settings
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'system/main.py', 'program_abspath': '/home/student/R/fl/PFLlib/system/main.py', 'program': '/home/student/R/fl/PFLlib/system/main.py'}
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/R/fl/PFLlib/system/wandb/run-20240629_131732-7jufdhv8/logs/debug.log
+2024-06-29 13:17:32,507 INFO    MainThread:14212 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/R/fl/PFLlib/system/wandb/run-20240629_131732-7jufdhv8/logs/debug-internal.log
+2024-06-29 13:17:32,508 INFO    MainThread:14212 [wandb_init.py:init():560] calling init triggers
+2024-06-29 13:17:32,508 INFO    MainThread:14212 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-29 13:17:32,508 INFO    MainThread:14212 [wandb_init.py:init():610] starting backend
+2024-06-29 13:17:32,508 INFO    MainThread:14212 [wandb_init.py:init():614] setting up manager
+2024-06-29 13:17:32,512 INFO    MainThread:14212 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-06-29 13:17:32,513 INFO    MainThread:14212 [wandb_init.py:init():622] backend started and connected
+2024-06-29 13:17:32,520 INFO    MainThread:14212 [wandb_init.py:init():711] updated telemetry
+2024-06-29 13:17:32,536 INFO    MainThread:14212 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-06-29 13:17:33,229 INFO    MainThread:14212 [wandb_run.py:_on_init():2402] communicating current version
+2024-06-29 13:17:33,385 INFO    MainThread:14212 [wandb_run.py:_on_init():2411] got version response 
+2024-06-29 13:17:33,386 INFO    MainThread:14212 [wandb_init.py:init():795] starting run threads in backend
+2024-06-29 13:17:33,611 INFO    MainThread:14212 [wandb_run.py:_console_start():2380] atexit reg
+2024-06-29 13:17:33,611 INFO    MainThread:14212 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-06-29 13:17:33,612 INFO    MainThread:14212 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-06-29 13:17:33,612 INFO    MainThread:14212 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-06-29 13:17:33,613 INFO    MainThread:14212 [wandb_init.py:init():838] run started, returning control to user process
+2024-06-29 13:17:33,619 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-06-29 13:17:33,619 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Configure stats pid to 14212
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Loading settings from /home/student/.config/wandb/settings
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Loading settings from /home/student/R/fl/PFLlib/system/wandb/settings
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'system/main.py', 'program_abspath': '/home/student/R/fl/PFLlib/system/main.py', 'program': '/home/student/R/fl/PFLlib/system/main.py'}
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_init.py:_log_setup():520] Logging user logs to /home/student/R/fl/PFLlib/system/wandb/run-20240629_131733-hi1ky110/logs/debug.log
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_init.py:_log_setup():521] Logging internal logs to /home/student/R/fl/PFLlib/system/wandb/run-20240629_131733-hi1ky110/logs/debug-internal.log
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_init.py:init():560] calling init triggers
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-29 13:17:33,620 INFO    MainThread:14212 [wandb_init.py:init():605] wandb.init() called when a run is still active
+2024-06-29 13:17:33,874 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:33,912 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:33,950 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:33,988 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,027 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,056 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,089 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,123 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,160 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,193 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,232 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,275 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,311 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,355 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,397 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,439 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,475 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,513 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:34,550 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching
+2024-06-29 13:17:35,067 INFO    MainThread:14212 [wandb_watch.py:watch():51] Watching

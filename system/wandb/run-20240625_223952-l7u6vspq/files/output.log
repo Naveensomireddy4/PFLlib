@@ -1,0 +1,226 @@
+SimpleCnn(
+  (conv1): Conv2d(28, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(16, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=1568, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=10, bias=True)
+)
+cuda is not avaiable.
+==================================================
+Algorithm: FedAvg
+Local batch size: 10
+Local epochs: 1
+Local learing rate: 0.005
+Local learing rate decay: False
+Total number of clients: 20
+Clients join in each round: 1.0
+Clients randomly join: False
+Client drop rate: 0.0
+Client select regarding time: False
+Running times: 1
+Dataset: BloodMNIST
+Number of classes: 10
+Backbone: resnet18
+Using device: cpu
+Using DP: False
+Auto break: False
+Global rounds: 2000
+DLG attack: False
+Total number of new clients: 0
+Fine tuning epoches on new clients: 0
+==================================================
+============= Running time: 0th =============
+Creating server and clients ...
+x(
+  (conv1): Conv2d(28, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): a(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): a(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): a(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): a(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): a(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): a(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+  (fc): Linear(in_features=10, out_features=10, bias=True)
+)
+Join ratio / total clients: 1.0 / 20
+Finished creating server and clients.
+Dropped clients: [10, 12, 15, 11, 14, 9, 2, 4, 7, 16]
+drop classif com
+-------------Round number: 0-------------
+Evaluate global model
+Averaged Train Loss: 2.2691
+Averaged Test Accurancy: 0.0703
+Averaged Test AUC: 0.5693
+Std Test Accurancy: 0.0527
+Std Test AUC: 0.0483
+clients: 10
+Training client: 0, Time Cost: 4.084203720092773, Train Accuracy: 25.77%
+Training client: 1, Time Cost: 3.7743723392486572, Train Accuracy: 33.10%
+Training client: 3, Time Cost: 4.182386159896851, Train Accuracy: 50.97%
+Training client: 5, Time Cost: 1.8172600269317627, Train Accuracy: 17.69%
+Training client: 6, Time Cost: 2.47194242477417, Train Accuracy: 24.74%
+Training client: 8, Time Cost: 4.076555013656616, Train Accuracy: 21.00%
+Training client: 13, Time Cost: 5.2284626960754395, Train Accuracy: 39.44%
+Training client: 17, Time Cost: 5.2938072681427, Train Accuracy: 26.18%
+Training client: 18, Time Cost: 3.829472303390503, Train Accuracy: 38.75%
+Training client: 19, Time Cost: 241.5582754611969, Train Accuracy: 73.19%
+length of uploaded models 20
+Dropped clients: [14, 15, 19, 5, 4, 13, 10, 6, 18, 3]
+drop classif com
+-------------Round number: 1-------------
+Evaluate global model
+Averaged Train Loss: 2.1540
+Averaged Test Accurancy: 0.2065
+Averaged Test AUC: 0.7442
+Std Test Accurancy: 0.0884
+Std Test AUC: 0.0476
+clients: 10
+Training client: 0, Time Cost: 4.521649360656738, Train Accuracy: 65.77%
+Training client: 1, Time Cost: 6.168909549713135, Train Accuracy: 70.00%
+Training client: 2, Time Cost: 4.795305490493774, Train Accuracy: 71.39%
+Training client: 7, Time Cost: 3.7769649028778076, Train Accuracy: 77.86%
+Training client: 8, Time Cost: 4.291243076324463, Train Accuracy: 59.67%
+Training client: 9, Time Cost: 3.3829843997955322, Train Accuracy: 47.50%
+Training client: 11, Time Cost: 5.183072090148926, Train Accuracy: 76.76%
+Training client: 12, Time Cost: 4.809382200241089, Train Accuracy: 59.03%
+Training client: 16, Time Cost: 5.527451992034912, Train Accuracy: 81.33%
+Training client: 17, Time Cost: 9.660974740982056, Train Accuracy: 79.71%
+length of uploaded models 20
+Dropped clients: [10, 1, 12, 0, 15, 11, 13, 16, 19, 5]
+drop classif com
+-------------Round number: 2-------------
+Evaluate global model
+Traceback (most recent call last):
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\main.py", line 548, in <module>
+    run(args)
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\main.py", line 374, in run
+    server.train()
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\servers\serveravg.py", line 505, in train
+    self.evaluate()
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\servers\serverbase.py", line 257, in evaluate
+    stats = self.test_metrics()
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\servers\serverbase.py", line 231, in test_metrics
+    ct, ns, auc = c.test_metrics()
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\clients\clientbase.py", line 117, in test_metrics
+    output = self.model(x)
+             ^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1582, in _call_impl
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\trainmodel\models.py", line 34, in forward
+    out = self.base(x)
+          ^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\trainmodel\my.py", line 102, in forward
+    out = self.layer4(out)
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\Akash_Django\R\Droupout2 (another copy)\PFLlib\system\flcore\trainmodel\my.py", line 32, in forward
+    out = self.bn2(self.conv2(out))
+                   ^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bobby\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
